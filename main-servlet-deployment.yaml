@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: main-servlet-container
-        image: mansi1811/java-app:2.0
+        image: mansi1811/java-app:4.0
         ports:
         - containerPort: 8080
 
