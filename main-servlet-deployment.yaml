@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: main-servlet-deployment 
+  labels:
+    app: main-servlet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: main-servlet
+  template:
+    metadata:
+      labels:
+        app: main-servlet
+    spec:
+      containers:
+      - name: main-servlet-container
+        image: mansi1811/java-app:2.0
+        ports:
+        - containerPort: 8080
+
