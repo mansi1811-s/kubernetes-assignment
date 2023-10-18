@@ -31,5 +31,5 @@ Step 11: Check if the services and pods are running correctly or not
          kubectl get pods
 
 step 12: Get the url for the service using   
-          minikube main-servlet-service --url
+          minikube service main-servlet-service --url
          With this url we can access the application 
